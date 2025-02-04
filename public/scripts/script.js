@@ -1,4 +1,23 @@
-const js_message = document.getElementById("javascript_message").innerHTML = "welcome";
+// const js_message = document.getElementById("javascript_message").innerHTML = "welcome";
+
+
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+
+function scrollFunction() {
+  let nav = document.querySelector("nav");
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    nav.style.padding = "0.5em";
+  } else {
+    nav.style.padding = "1em";
+    nav.style.paddingRight = "8em";
+  }
+}
+
+
 
 // const ok = document.getElementById('ok');
 // let html;
